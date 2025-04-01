@@ -1,0 +1,88 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyO7eZ3MFobwhn9cwkthnOkD",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/shakirabanu20/Sample-/blob/main/Eda%20calculate%20the%20mean\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "NZ-1BwQjyqok",
+        "outputId": "4e868a83-ac29-4ba1-983d-cb70dcce145a",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Mean: 40.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "import numpy as np\n",
+        "import pandas as pd\n",
+        "from scipy import stats\n",
+        "\n",
+        "# Sample dataset\n",
+        "data = [10, 20, 30, 40, 50, 60, 70]\n",
+        "\n",
+        "# Mean\n",
+        "mean_value = np.mean(data)\n",
+        "print(f\"Mean: {mean_value}\")  # Corrected quotation marks"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "variance = np.var(data, ddof=1) # Sample variance\n",
+        "# Standard Deviation\n",
+        "std_dev = np.std(data, ddof=1)\n",
+        "print(f\"Variance: {variance}, Standard Deviation: {std_dev}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "H9BLvxN30qG5",
+        "outputId": "08b9d3f4-f4b4-421c-dc46-9907046b714f"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Variance: 466.6666666666667, Standard Deviation: 21.602468994692867\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
